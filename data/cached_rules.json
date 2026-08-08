@@ -1,0 +1,85 @@
+{
+  "rules": {
+    "mue_units_v1": {
+      "rule_id": "PP-1042",
+      "name": "MUE units limit - skin tag removal (CPT 11200)",
+      "description": "Flags claim lines for CPT 11200 that exceed 15 units on a single date of service.",
+      "source_policy": "PP-1042 (2024-01-01)",
+      "action": "FLAG",
+      "message": "CPT 11200 exceeds the 15-unit medically unlikely edit limit.",
+      "combine": "all",
+      "conditions": [
+        {"field": "cpt_code", "op": "equals", "value": "11200"},
+        {"field": "units", "op": "greater_than", "value": 15}
+      ]
+    },
+    "mue_units_v2": {
+      "rule_id": "PP-1042",
+      "name": "MUE units limit - skin tag removal (CPT 11200)",
+      "description": "Flags claim lines for CPT 11200 that exceed 10 units on a single date of service.",
+      "source_policy": "PP-1042 (2025-01-01)",
+      "action": "FLAG",
+      "message": "CPT 11200 exceeds the 10-unit medically unlikely edit limit.",
+      "combine": "all",
+      "conditions": [
+        {"field": "cpt_code", "op": "equals", "value": "11200"},
+        {"field": "units", "op": "greater_than", "value": 10}
+      ]
+    },
+    "age_edit": {
+      "rule_id": "PP-2075",
+      "name": "Age-appropriate preventive service (CPT 99385)",
+      "description": "Flags CPT 99385 billed for members whose age is outside the 18-39 range.",
+      "source_policy": "PP-2075 (2024-01-01)",
+      "action": "FLAG",
+      "message": "CPT 99385 billed for a member outside the 18-39 age band.",
+      "combine": "all",
+      "conditions": [
+        {"field": "cpt_code", "op": "equals", "value": "99385"},
+        {"field": "member_age", "op": "not_in_range", "value": [18, 39]}
+      ]
+    },
+    "modifier_edit": {
+      "rule_id": "PP-3310",
+      "name": "Bilateral modifier restriction (CPT 29881)",
+      "description": "Flags CPT 29881 reported with modifier 50 (bilateral) on a unilateral procedure.",
+      "source_policy": "PP-3310 (2024-01-01)",
+      "action": "FLAG",
+      "message": "CPT 29881 reported with invalid bilateral modifier 50.",
+      "combine": "all",
+      "conditions": [
+        {"field": "cpt_code", "op": "equals", "value": "29881"},
+        {"field": "modifiers", "op": "contains", "value": "50"}
+      ]
+    },
+    "pos_edit": {
+      "rule_id": "PP-4120",
+      "name": "Place of service restriction (CPT 99213)",
+      "description": "Flags CPT 99213 reported with place of service 21 (inpatient hospital).",
+      "source_policy": "PP-4120 (2024-01-01)",
+      "action": "FLAG",
+      "message": "CPT 99213 not payable with place of service 21 (inpatient).",
+      "combine": "all",
+      "conditions": [
+        {"field": "cpt_code", "op": "equals", "value": "99213"},
+        {"field": "place_of_service", "op": "equals", "value": "21"}
+      ]
+    },
+    "real_ncci_mue_94002": {
+      "rule_id": "NCCI-MUE-94002",
+      "name": "MUE units limit - ventilation assist/management initial day (CPT 94002)",
+      "description": "Flags claim lines reporting more than 1 unit of CPT 94002 on a single date of service.",
+      "source_policy": "CMS NCCI Policy Manual, Ch. I Sec. V (eff. 2026-01-01); MUE MAI=2",
+      "action": "FLAG",
+      "message": "CPT 94002 exceeds its MUE value of 1 unit per date of service (absolute per-day edit).",
+      "combine": "all",
+      "conditions": [
+        {"field": "cpt_code", "op": "equals", "value": "94002"},
+        {"field": "units", "op": "greater_than", "value": 1}
+      ]
+    }
+  },
+  "change_summaries": {
+    "mue_units_v1__mue_units_v2": "The 2025 revision of Payment Policy PP-1042 lowers the Medically Unlikely Edit (MUE) unit ceiling for CPT 11200 from 15 units to 10 units per date of service, and adds a requirement that providers billing above the limit submit supporting documentation for manual clinical review. Operational impact: the tighter limit will flag additional claim lines that previously passed (any 11200 line billed at 11-15 units), increasing review volume but also increasing potential overpayment recovery."
+  }
+}

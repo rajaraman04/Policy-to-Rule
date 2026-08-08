@@ -1,0 +1,10 @@
+Payment Policy PP-2075: Age-Appropriate Preventive Medicine Service (CPT 99385)
+
+CPT code 99385 represents an initial comprehensive preventive medicine evaluation and
+management service for a NEW patient aged 18 through 39 years. This service is only
+appropriate when the member's age at the date of service falls between 18 and 39 years,
+inclusive. Claim lines reporting CPT 99385 for members outside the 18-39 age range should
+be flagged as an age-inappropriate service and routed to the correct age-band code.
+
+Effective date: 2024-01-01.
+Source: AMA CPT preventive medicine service age bands (illustrative example).

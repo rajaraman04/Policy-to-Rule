@@ -1,0 +1,10 @@
+Payment Policy PP-4120: Place of Service Restriction (CPT 99213)
+
+CPT code 99213 (office or other outpatient visit for the evaluation and management of an
+established patient) is payable in outpatient settings. It is not payable when reported
+with place of service 21 (inpatient hospital), because inpatient evaluation and management
+is described by a different code family. Claim lines reporting CPT 99213 with place of
+service 21 should be flagged as a place-of-service conflict.
+
+Effective date: 2024-01-01.
+Source: CMS Place of Service code set and E/M billing guidelines (illustrative example).

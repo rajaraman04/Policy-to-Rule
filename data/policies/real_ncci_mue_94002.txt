@@ -1,0 +1,17 @@
+Source: CMS Medicare National Correct Coding Initiative (NCCI) Policy Manual,
+effective January 1, 2026. Chapter I, Section V, "Medically Unlikely Edits (MUEs),"
+pp. I-28 to I-31.
+URL: https://www.cms.gov/files/document/2026-ncci-medicare-policy-manual-all-chapters.pdf
+
+Policy - Medically Unlikely Edit (MUE):
+A Medically Unlikely Edit sets the maximum number of units of service (UOS) that a
+provider may report for a given HCPCS/CPT code for the same beneficiary on the same
+date of service. When the units reported on a claim line exceed the code's MUE value,
+the units on that line are denied.
+
+Worked example from the manual:
+CPT code 94002 (ventilation assist and management, initial day) has an MUE value of 1
+and an MUE Adjudication Indicator (MAI) of 2 - an absolute per-day edit. Reporting more
+than 1 unit of CPT 94002 for the same beneficiary on the same date of service is
+contrary to correct coding policy, because a single date of service cannot represent
+two "initial" days of ventilation management.

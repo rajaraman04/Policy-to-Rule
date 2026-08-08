@@ -1,0 +1,9 @@
+Payment Policy PP-3310: Bilateral Modifier Restriction (CPT 29881)
+
+CPT code 29881 (arthroscopy, knee, surgical; with meniscectomy) describes an inherently
+unilateral procedure performed on a single knee. Modifier 50 (bilateral procedure) is not
+appropriate when reported with CPT 29881. Claim lines reporting CPT 29881 together with
+modifier 50 should be flagged as an invalid procedure-to-modifier combination.
+
+Effective date: 2024-01-01.
+Source: CMS NCCI Policy Manual, bilateral surgery indicators (illustrative example).

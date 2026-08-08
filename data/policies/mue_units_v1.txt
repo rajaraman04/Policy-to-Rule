@@ -1,0 +1,10 @@
+Payment Policy PP-1042: Medically Unlikely Edits (MUE) - Skin Tag Removal (CPT 11200)
+
+CPT code 11200 (removal of skin tags, up to and including 15 lesions) is subject to a
+Medically Unlikely Edit. A single claim line for CPT 11200 must not exceed 15 units of
+service for the same member on the same date of service. Claim lines reporting more than
+15 units for CPT 11200 should be flagged for review, as they exceed the medically
+reasonable maximum number of units for this procedure.
+
+Effective date: 2024-01-01.
+Source: CMS National Correct Coding Initiative (NCCI) MUE policy manual (illustrative example).
