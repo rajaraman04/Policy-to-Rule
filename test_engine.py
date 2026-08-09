@@ -13,6 +13,7 @@ EXPECTED = {
     "modifier_edit": {"CLM0007"},
     "pos_edit": {"CLM0010", "CLM0012"},
     "real_ncci_mue_94002": {"CLM0016"},
+    "clinical_guideline_crc": {"CLM0018"},
 }
 
 

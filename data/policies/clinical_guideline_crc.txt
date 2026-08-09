@@ -1,0 +1,11 @@
+Source: U.S. Preventive Services Task Force (USPSTF). Final Recommendation Statement:
+Screening for Colorectal Cancer (May 18, 2021).
+URL: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening
+
+Clinical Practice Guideline - Colorectal Cancer Screening:
+The USPSTF recommends screening for colorectal cancer in average-risk adults beginning at
+age 45 and continuing through age 75. This 2021 recommendation lowered the starting age
+from 50 to 45. Screening initiated before age 45 falls outside the recommended starting
+age for average-risk individuals. Claim lines reporting a screening colonoscopy
+(HCPCS G0121) for a member younger than 45 years should be flagged as below the
+guideline-recommended screening start age.

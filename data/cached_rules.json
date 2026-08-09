@@ -77,6 +77,19 @@
         {"field": "cpt_code", "op": "equals", "value": "94002"},
         {"field": "units", "op": "greater_than", "value": 1}
       ]
+    },
+        "clinical_guideline_crc": {
+      "rule_id": "USPSTF-CRC-2021",
+      "name": "Colorectal cancer screening start age (USPSTF, 2021)",
+      "description": "Flags screening colonoscopy (G0121) billed for members below the USPSTF-recommended start age of 45.",
+      "source_policy": "USPSTF Colorectal Cancer Screening recommendation (2021); start age 45",
+      "action": "FLAG",
+      "message": "Screening colonoscopy (G0121) billed below the USPSTF-recommended start age of 45.",
+      "combine": "all",
+      "conditions": [
+        {"field": "cpt_code", "op": "equals", "value": "G0121"},
+        {"field": "member_age", "op": "less_than", "value": 45}
+      ]
     }
   },
   "change_summaries": {
